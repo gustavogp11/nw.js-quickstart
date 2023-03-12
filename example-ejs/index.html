@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example with ejs</title>
+  <script>
+    var fs = require('fs');
+    var ejs = require('ejs');
+
+    fs.readFile('./index.ejs', function (err, data) {
+      if (err) {
+        document.body.innerHTML = err.toString();
+        return;
+      }
+
+      var template = ejs.compile(data.toString());
+      var jsonDataFile = fs.readFileSync('./data.json');
+      var jsonData = JSON.parse(jsonDataFile);
+      jsonData["now"] = new Date().toISOString();
+      document.body.innerHTML = template(jsonData);
+    });
+  </script>
+</head>
+
+<body>
+  Not yet rendered...
+</body>
+
+</html>

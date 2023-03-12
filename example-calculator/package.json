@@ -1,0 +1,9 @@
+{
+  "name": "example-calculator",
+  "main": "index.html",
+  "window": {
+    "resizable": false,
+    "width": 400,
+    "height": 400
+  }
+}

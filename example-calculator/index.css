@@ -1,0 +1,43 @@
+body {
+    font-size: 24px;
+}
+
+#calc-table td {
+    padding: 12px 24px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+#calc-table tr:first-child>td,
+#calc-table td:last-child,
+#calc-table td.special-key {
+    font-size: 20px;
+}
+
+#calc-input {
+    height: 30px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    width: 100%;
+}
+
+#calc-input:focus {
+    outline: none;
+}
+
+#history {
+    font-size: small;
+}
+
+.calc-pnl {
+    display: inline-block;
+    width: 60%;
+}
+
+.history-pnl {
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    text-align: right;
+}

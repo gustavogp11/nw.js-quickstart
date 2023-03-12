@@ -1,0 +1,7 @@
+{
+  "name": "example-ejs",
+  "main": "index.html",
+  "dependencies": {
+    "ejs": "^3.1.8"
+  }
+}
